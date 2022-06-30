@@ -10,7 +10,7 @@ import com.alacrity.music.Destinations.HOME_ROUTE
 import com.alacrity.music.ui.main.MainViewModel
 
 @Composable
-fun MusicNavGraph(
+fun AppNavGraph(
     context: Context,
     homeViewModel: MainViewModel,
     navController: NavHostController = rememberNavController(),

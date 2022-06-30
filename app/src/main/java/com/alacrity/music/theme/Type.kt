@@ -19,7 +19,7 @@ private val Domine = FontFamily(
     Font(R.font.domine_bold, FontWeight.Bold)
 )
 
-val MusicTypography = Typography(
+val TemplateTypography = Typography(
     defaultFontFamily = Montserrat,
     h1 = TextStyle(
         fontWeight = FontWeight.SemiBold,

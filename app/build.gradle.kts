@@ -33,7 +33,7 @@ android {
     }
 
     composeOptions {
-        kotlinCompilerExtensionVersion = "1.1.0"
+        kotlinCompilerExtensionVersion = Versions.kotlinCompilerExt
     }
 
     compileOptions {
@@ -51,6 +51,7 @@ dependencies {
     room()
     async()
     jetpack()
+    imageLoading()
 }
 
 fun DependencyHandlerScope.core() {
@@ -73,7 +74,6 @@ fun DependencyHandlerScope.di() {
 
 fun DependencyHandlerScope.imageLoading() {
     implementation(Dependencies.image.glide)
-    annotationProcessor(Dependencies.image.glideCompiler)
 }
 
 fun DependencyHandlerScope.async() {
@@ -97,7 +97,6 @@ fun DependencyHandlerScope.jetpack() {
     implementation(Dependencies.compose.animation)
     implementation(Dependencies.compose.activity)
     implementation(Dependencies.compose.navigation)
-    implementation(Dependencies.compose.insets)
     implementation(Dependencies.compose.uiController)
 }
 

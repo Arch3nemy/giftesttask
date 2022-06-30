@@ -30,14 +30,14 @@ private val DarkThemeColors = darkColors(
 )
 
 @Composable
-fun MusicTheme(
+fun AppTheme(
     darkTheme: Boolean = isSystemInDarkTheme(),
     content: @Composable () -> Unit
 ) {
     MaterialTheme(
         colors = if (darkTheme) DarkThemeColors else LightThemeColors,
-        typography = MusicTypography,
-        shapes = MusicShapes,
+        typography = TemplateTypography,
+        shapes = TemplateShapes,
         content = content
     )
 }

@@ -4,12 +4,11 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.alacrity.music.BaseEvent
 import com.alacrity.music.EventHandler
-import com.alacrity.music.MusicException
+import com.alacrity.music.TemplateException
 import com.alacrity.music.view_states.BaseViewState
 import kotlinx.coroutines.*
 import kotlinx.coroutines.flow.MutableStateFlow
 import timber.log.Timber
-import java.sql.Types.NULL
 
 @Suppress("UNCHECKED_CAST")
 abstract class BaseViewModel<T : BaseEvent, V: BaseViewState>(defaultViewState: V) : ViewModel(), EventHandler<T> {
@@ -23,7 +22,7 @@ abstract class BaseViewModel<T : BaseEvent, V: BaseViewState>(defaultViewState: 
      * @return a Result<T> which has getOrNull() -> returns response, exceptionOrNull() -> returns failure if happened
      */
     protected fun <R> launch(dispatcher: CoroutineDispatcher = Dispatchers.IO, logError: String? = null, logSuccess: String? = null, block: suspend () -> R): Result<R> {
-        var result = Result.failure<R>(MusicException())
+        var result = Result.failure<R>(TemplateException())
         viewModelScope.launch(dispatcher) {
              result = withContext(Dispatchers.Default) {
                  try {

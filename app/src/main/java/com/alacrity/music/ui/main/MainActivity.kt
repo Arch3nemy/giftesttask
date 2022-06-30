@@ -4,7 +4,7 @@ import android.os.Bundle
 import androidx.activity.compose.setContent
 import androidx.appcompat.app.AppCompatActivity
 import com.alacrity.music.App
-import com.alacrity.music.MusicApp
+import com.alacrity.music.TemplateApp
 import javax.inject.Inject
 
 class MainActivity: AppCompatActivity() {
@@ -16,7 +16,7 @@ class MainActivity: AppCompatActivity() {
         super.onCreate(savedInstanceState)
         App.appComponent.inject(this)
         setContent {
-            MusicApp(context = this, homeViewModel = mainViewModel)
+            TemplateApp(context = this, homeViewModel = mainViewModel)
         }
     }
 

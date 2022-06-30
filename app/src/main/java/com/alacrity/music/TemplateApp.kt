@@ -11,9 +11,8 @@ import androidx.compose.ui.graphics.Outline
 import androidx.compose.ui.graphics.Shape
 import androidx.compose.ui.unit.Density
 import androidx.compose.ui.unit.LayoutDirection
-import com.alacrity.music.theme.MusicTheme
+import com.alacrity.music.theme.AppTheme
 import com.alacrity.music.ui.main.MainViewModel
-import com.google.accompanist.insets.ProvideWindowInsets
 import com.google.accompanist.systemuicontroller.rememberSystemUiController
 
 object Destinations {
@@ -21,24 +20,22 @@ object Destinations {
 }
 
 @Composable
-fun MusicApp(
+fun TemplateApp(
     context: Context,
     homeViewModel: MainViewModel
 ) {
-    MusicTheme {
-        ProvideWindowInsets {
+    AppTheme {
             val systemUiController = rememberSystemUiController()
             val darkIcons = MaterialTheme.colors.isLight
             SideEffect {
                 systemUiController.setSystemBarsColor(Color.Transparent, darkIcons = darkIcons)
             }
 
-            MusicNavGraph(
+            AppNavGraph(
                 context = context,
                 homeViewModel = homeViewModel,
             )
         }
-    }
 
 }
 

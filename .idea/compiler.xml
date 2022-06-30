@@ -10,6 +10,8 @@
       <module name="Music.data" target="11" />
       <module name="Template.app" target="11" />
       <module name="Template.buildSrc" target="11" />
+      <module name="Template.buildSrc.main" target="11" />
+      <module name="Template.buildSrc.test" target="11" />
       <module name="Template.data" target="11" />
     </bytecodeTargetLevel>
   </component>
