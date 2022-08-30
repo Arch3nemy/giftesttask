@@ -33,4 +33,11 @@ android {
 
 dependencies {
     implementation(project(":domain"))
+    retrofit()
+}
+
+fun DependencyHandlerScope.retrofit() {
+    implementation(Dependencies.retrofit.retrofit)
+    implementation(Dependencies.retrofit.gson)
+    implementation(Dependencies.retrofit.gsonConverter)
 }

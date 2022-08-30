@@ -51,6 +51,7 @@ dependencies {
     room()
     async()
     jetpack()
+    retrofit()
     imageLoading()
 }
 
@@ -98,5 +99,11 @@ fun DependencyHandlerScope.jetpack() {
     implementation(Dependencies.compose.activity)
     implementation(Dependencies.compose.navigation)
     implementation(Dependencies.compose.uiController)
+}
+
+fun DependencyHandlerScope.retrofit() {
+    implementation(Dependencies.retrofit.retrofit)
+    implementation(Dependencies.retrofit.gson)
+    implementation(Dependencies.retrofit.gsonConverter)
 }
 
