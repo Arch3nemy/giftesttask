@@ -10,6 +10,7 @@ import androidx.compose.material.rememberScaffoldState
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.text.style.TextAlign
 import com.alacrity.template.theme.TemplateTypography
 import com.alacrity.template.ui.main.MainViewModel
 import com.alacrity.template.ui.main.models.enterScreen
@@ -34,7 +35,8 @@ fun MainScreen(
             Box(modifier = Modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
                 Text(
                     text = (state as MainViewState.FinishedLoading).numberWithFact.fact,
-                    style = TemplateTypography.h1
+                    style = TemplateTypography.h1,
+                    textAlign = TextAlign.Center
                 )
             }
         }

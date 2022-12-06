@@ -25,6 +25,10 @@ class MainViewModel @Inject constructor(
         }
     }
 
+    fun lal() {
+
+    }
+
     private fun Loading.reduce(event: MainEvent) {
         logReduce(event)
         when (event) {

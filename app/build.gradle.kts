@@ -9,7 +9,7 @@ android {
     buildToolsVersion = Dependencies.android.buildTools
 
     defaultConfig {
-        applicationId = "com.alacrity.music"
+        applicationId = "com.alacrity.template"
         minSdk = Android.minSdk
         targetSdk = Android.targetSdk
         versionCode = 1
