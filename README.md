@@ -1,6 +1,6 @@
 # Test task for Natif company. Tech stack: Jetpack Compose, Dagger2, Coroutines, Room, Paging 3 Library, Clean Architecture & MVI.
 
-Watch gifs, search for the ones you want with the search bar on the top, save it to the local database with the help of save button on the top right in the second screen(touch the gif to open it). Swipe in second screen is available to run through gif list. Press FAB in the bottom left to open saved gifs, you can remove it from local database using tap on gif while on saved gifs screen.
+Watch gifs, search for the ones you want with the search bar on the top, save it to the local database with the help of save button on the top right in the second screen(touch the gif to open it). Swipe in second screen is available to run through gif list. Press FAB in the bottom right to open saved gifs, you can remove it from local database using tap on gif while on saved gifs screen.
 
 <div align="center">
     <p><b>Light theme</b></p>
