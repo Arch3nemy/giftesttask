@@ -22,4 +22,6 @@ object Other {
 
     const val okHttp = "com.squareup.okhttp3:okhttp:${Versions.okHttp}"
 
+    const val klaxon = "com.beust:klaxon:${Versions.klaxon}"
+
 }

@@ -12,4 +12,5 @@ object Compose {
     const val activity = "androidx.activity:activity-compose:${Versions.composeActivity}"
     const val navigation = "androidx.navigation:navigation-compose:${Versions.navigation}"
     const val uiController = "com.google.accompanist:accompanist-systemuicontroller:${Versions.accompanist}"
+    const val pager = "com.google.accompanist:accompanist-pager:${Versions.pager}"
     }

@@ -13,6 +13,7 @@ dependencies {
     di()
     async()
     retrofit()
+    klaxon()
 }
 
 fun DependencyHandlerScope.core() {
@@ -30,4 +31,8 @@ fun DependencyHandlerScope.async() {
 fun DependencyHandlerScope.retrofit() {
     implementation(Dependencies.retrofit.retrofit)
     implementation(Dependencies.retrofit.gson)
+}
+
+fun DependencyHandlerScope.klaxon() {
+    implementation(Dependencies.other.klaxon)
 }

@@ -48,4 +48,14 @@ object Versions {
     //other
     const val gson = "2.10"
 
+    //klaxon serializer
+    const val klaxon = "5.5"
+
+    //paging
+    const val pagingCompose = "1.0.0-alpha17"
+    const val pagingRuntime = "3.1.1"
+
+    //view pager
+    const val pager = "0.12.0"
+
 }
